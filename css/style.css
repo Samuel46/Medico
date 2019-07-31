@@ -64,6 +64,7 @@ body {
   text-align: left;
   background-color: #fff; }
 
+  
    /* Alert */
    .alert{
     text-align: center;
@@ -73,6 +74,8 @@ body {
     margin-bottom:10px;
     display:none;
   }
+
+  
 
 
   /* LOGO */
@@ -442,7 +445,7 @@ samp {
 
 code {
   font-size: 87.5%;
-  color: #e83e8c;
+  color: #3e6be8;
   word-break: break-word; }
   a > code {
     color: inherit; }
@@ -7324,7 +7327,7 @@ h1, h2, h3, h4, h5,
   top: 30px; }
   @media (max-width: 991.98px) {
     .ftco-navbar-light {
-      background: #404044 !important;
+      background: rgba(240, 116, 58, 0.2) !important;
       top: 0;
       position: relative; } }
   .ftco-navbar-light .navbar-brand {
@@ -7477,7 +7480,7 @@ h1, h2, h3, h4, h5,
     content: '';
     opacity: .97;
     background: #ee76ad;
-    background: -moz-linear-gradient(45deg, #ee76ad 0%, #efac78 100%);
+    background: -moz-linear-gradient(45deg, #43cae2 0%, #efac78 100%);
     background: -webkit-gradient(left bottom, right top, color-stop(0%, #ee76ad), color-stop(100%, #efac78));
     background: -webkit-linear-gradient(45deg, #ee76ad 0%, #efac78 100%);
     background: -o-linear-gradient(45deg, #ee76ad 0%, #efac78 100%);

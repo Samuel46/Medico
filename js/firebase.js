@@ -30,10 +30,15 @@ function submitForm(e) {
   var gender = getInputVal("gender");
   var other_dep = getInputVal("other_dep");
   var mobile_no = getInputVal("mobile_no");
+  var r_owner = getInputVal("r_owner");
+  var r_tenant = getInputVal("r_tenant");
+  var b_owner = getInputVal("b_owner");
+  var b_tenant = getInputVal("b_tenant");
+
 
 
   // Save the application form
-  saveMessage(applicant_name, national_id, gender, other_dep, mobile_no);
+  saveMessage(applicant_name, national_id, gender, other_dep, mobile_no, r_owner, r_tenant, b_owner, b_tenant);
 
   //Show alert
   document.querySelector('.alert').style.display = 'block';
@@ -63,7 +68,11 @@ function saveMessage(
   national_id,
   gender,
   other_dep,
-  mobile_no
+  mobile_no,
+  r_owner,
+  r_tenant,
+  b_owner,
+  b_tenant
 
 ) {
   var newMessageRef = messagesRef.push();
@@ -72,7 +81,11 @@ function saveMessage(
     national_id: national_id,
     gender: gender,
     other_dep: other_dep,
-    mobile_no: mobile_no
+    mobile_no: mobile_no,
+    r_owner: r_owner,
+    r_tenant: r_tenant,
+    b_owner: b_owner,
+    b_tenant: b_tenant
 
   });
 }
