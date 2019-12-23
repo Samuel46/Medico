@@ -64,6 +64,10 @@ body {
   text-align: left;
   background-color: #fff; }
 
+  .color {
+    color: #fff
+  }
+
   
    /* Alert */
    .alert{
@@ -74,14 +78,26 @@ body {
     margin-bottom:10px;
     display:none;
   }
+  /* class paragraph */
+  .para{
+    color: #fff;
+  }
 
-  
+  /* grid system */
+  .grid-system {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+ 
+    
+    
+  }
 
 
-  /* LOGO */
-  .navbar-logo {
-    width: 100px;
-    height: 100px;
+  /* styling the paragraph */
+  .paraa {
+    font-size: 20px;
+    
   }
 
 [tabindex="-1"]:focus {
@@ -482,7 +498,10 @@ pre {
   margin-left: auto; }
   @media (min-width: 576px) {
     .container {
-      max-width: 540px; } }
+      max-width: 540px; } 
+      
+    
+    }
   @media (min-width: 768px) {
     .container {
       max-width: 720px; } }
@@ -493,12 +512,27 @@ pre {
     .container {
       max-width: 1140px; } }
 
+
+      /* small devices media query */
+
+      @media (max-width: 575px) { 
+        .container {
+          max-width: 500px;
+        }
+        .color {
+          display: none;
+        }
+       
+      }
+
 .container-fluid {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto; }
+
+  
 
 .row {
   display: -webkit-box;
@@ -7327,7 +7361,7 @@ h1, h2, h3, h4, h5,
   top: 30px; }
   @media (max-width: 991.98px) {
     .ftco-navbar-light {
-      background: rgba(240, 116, 58, 0.2) !important;
+      
       top: 0;
       position: relative; } }
   .ftco-navbar-light .navbar-brand {
@@ -7470,7 +7504,10 @@ h1, h2, h3, h4, h5,
   width: 100%;
   height: 100%;
   position: inherit;
-  z-index: 0; }
+  z-index: 0; 
+ 
+
+}
   .hero-wrap .overlay {
     position: absolute;
     top: 0;
@@ -7479,15 +7516,16 @@ h1, h2, h3, h4, h5,
     bottom: 0;
     content: '';
     opacity: .97;
-    background: #ee76ad;
-    background: -moz-linear-gradient(45deg, #43cae2 0%, #efac78 100%);
-    background: -webkit-gradient(left bottom, right top, color-stop(0%, #ee76ad), color-stop(100%, #efac78));
-    background: -webkit-linear-gradient(45deg, #ee76ad 0%, #efac78 100%);
-    background: -o-linear-gradient(45deg, #ee76ad 0%, #efac78 100%);
-    background: -ms-linear-gradient(45deg, #ee76ad 0%, #efac78 100%);
-    background: linear-gradient(45deg, #ee76ad 0%, #efac78 100%);
+   
+    background: #76d2ee;
+    background: -moz-linear-gradient(45deg, #43cae2 0%, #10c44c 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, #76e0ee), color-stop(100%, #efac78));
+    background: -webkit-linear-gradient(45deg, #76c8ee 0%, #78efa0 100%);
+    background: -o-linear-gradient(45deg, #76c8ee 0%, #78efa0  100%);
+    background: -ms-linear-gradient(45deg, #76b4ee 0%, #78efa0  100%);
+    background: linear-gradient(45deg, #76d6ee 0%, #78efa0  100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#448ef6', endColorstr='#af05a9', GradientType=1 ); }
-
+  
 #particles-js {
   position: absolute;
   top: 0;
@@ -7495,7 +7533,10 @@ h1, h2, h3, h4, h5,
   bottom: 0;
   right: 0;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  color: black;
+
+}
 
 .slider-text {
   position: absolute;
@@ -7510,15 +7551,18 @@ h1, h2, h3, h4, h5,
     line-height: 1.2;
     font-weight: 200; }
     @media (max-width: 991.98px) {
+      .grid-system {
+        display: grid;
+        grid-template-columns: 1fr;
+        }
       .slider-text h1 {
         font-size: 40px; } }
     .slider-text h1 strong {
       font-weight: 800; }
   .slider-text p {
-    font-size: 20px;
-    line-height: 1.5;
-    font-weight: 300;
-    color: rgba(0, 0, 0, 0.8); }
+
+
+    }
     .slider-text p strong {
       font-weight: 700; }
       .slider-text p strong a {
@@ -7585,7 +7629,7 @@ h1, h2, h3, h4, h5,
       border-radius: 50%;
       background: #dadadc; }
       .owl-carousel .owl-dots .owl-dot.active {
-        background: #efac78; }
+        background: #78efd1; }
   .owl-carousel:hover .owl-nav .owl-prev,
   .owl-carousel:hover .owl-nav .owl-next {
     opacity: 1; }
@@ -7665,7 +7709,7 @@ h1, h2, h3, h4, h5,
     font-weight: 300 !important; }
     .ftco-section-featured .heading-section h2 strong {
       font-weight: 700;
-      color: #efac78;
+      color: #78efd1;
       background: #fdf2ea; }
   .ftco-section-featured.ftco-section-featured-2 {
     margin-top: 0 !important;
