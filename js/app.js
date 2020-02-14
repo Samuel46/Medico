@@ -1,7 +1,18 @@
 // initialize Firebase
 // -------------------------------------------- //
-
-// config firebase //
+// Your web app's Firebase configuration
+var firebaseConfig = {
+  apiKey: "AIzaSyDi2pP0JpzgRG4SioTi84QTgoJTL3P-ZPE",
+  authDomain: "medico-c95b6.firebaseapp.com",
+  databaseURL: "https://medico-c95b6.firebaseio.com",
+  projectId: "medico-c95b6",
+  storageBucket: "medico-c95b6.appspot.com",
+  messagingSenderId: "723247093884",
+  appId: "1:723247093884:web:b3aa64d30672ed1cd911f9",
+  measurementId: "G-FV3G46SZ1N"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
 
 // Get elements
 const txtEmail = document.getElementById("txtEmail");

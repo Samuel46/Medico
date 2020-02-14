@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Make your complaint</title>
+  <title>MEDICO</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -32,11 +32,14 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
-      <img class="navbar-logo" src="images/favicon.png" alt="">
-      <a class="navbar-brand" href="index.html">Medico LTD
+     
+      <a class="navbar-brand" href="index.html">Medico
 
       </a>
-
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+        aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
       <div class="collapse navbar-collapse" id="ftco-nav">
 
       </div>
@@ -51,8 +54,8 @@
       <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
         <div class="col-md-6 ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }">
           <p class="breadcrumbs" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><span class="mr-2"><a
-                href="index.html">LogOut</a></span> <span>Report</span></p>
-          <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Report your complaint</h1>
+                href="index.html">Home</a></span> <span>Register</span></p>
+          <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Medico</h1>
         </div>
       </div>
     </div>
@@ -62,7 +65,7 @@
     <div class="container bg-light">
       <div class="row d-flex mb-5 contact-info">
         <div class="col-md-12 mb-4">
-          <h2 class="h4"> COMPLAINT APPLICATION FORM</h2>
+          <h2 class="h4">FORM FOR REPORTING POOR QUALITY MEDICINAL PRODUCTS</h2>
         </div>
         <div class="w-100"></div>
         <div class="col-md-3">
@@ -76,72 +79,368 @@
         </div>
 
       </div>
-
-      <!-- MotherShip Form -->
-      <form id="contactForm">
-        <div class="row block-9">
-          <div class="col-md-6 pr-md-5">
-
-
+      <div class="row block-9">
+        <div class="col-md-6 pr-md-5">
+          <form id="contactForm">
             <div class="form-group">
-              <h6>CLIENT'S PERSONAL INFORMATION</h6>
-              <input type="text" class="form-control" placeholder="Applicant's Name" id="applicant_name">
+              <h5>FACILITY INFORMATION</h5>
+              <input type="text" class="form-control" placeholder="Name of Facility" name="applicant_name"
+                id="applicant_name">
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Enter Hospital's Name" id="national_id">
+              <input type="text" class="form-control" placeholder="Facility Address" name="national_id" id="national_id">
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Gender" value="" id="gender">
+              <input type="text" class="form-control" placeholder="Facility Code" name="gender" id="gender">
             </div>
            
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Mobile Number" id="mobile_no">
-            </div>
-            
-           
+
             <!-- <div class="form-group">
-            <input type="submit" value="Submit" class="btn btn-primary py-3 px-5">
-          </div> -->
+              <h5>Residential Address</h5>
+              <label>
+                <input type="checkbox" class="radio" value="r.owner" name="fooby[1][]" />Owner</label>
+              <label>
+                <input type="checkbox" class="radio" value="r.tenant" name="fooby[1][]" />Tenant</label>
 
-
-          </div>
-          <!-- Second column  -->
-          <div class="col-md-6">
-            <!-- form section -->
-
-            <div class="form-group">
-              <h6>Enter your complaint</h6>
-              
-              <textarea name="Enter your report" id="" cols="30" rows="10"></textarea>
-            </div>
-            
-            
-
-
-
-          </div>
+            </div> -->
+            <!-- <div class="form-group">
+              <h5>Business Location</h5>
+              <label>
+                <input type="checkbox" class="radio" value="b.owner" name="fooby[2][]" />Owner</label>
+              <label>
+                <input type="checkbox" class="radio" value="b.tenant" name="fooby[2][]" />Tenant</label>
+            </div> -->
+           
+          </form>
 
         </div>
-        <!-- end of row 1 -->
+        <!-- Second column  -->
+        <div class="col-md-6">
+          <div class="alert">You have submited a new entry!!</div>
+          <form action="#">
+            <div class="form-group">
+              <br>
+              <input type="text" class="form-control" placeholder="Facility Telephone">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Country">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Sub County">
+            </div>
+           
+
+          </form>
+
+        </div>
+
+      </div>
+
+      <!-- second row -->
+      <div class="row block-9">
+        <div class="col-md-6 pr-md-5">
+          <form id="contactForm">
+            <div class="form-group">
+              <h5>PRODUCT IDENTITY</h5>
+              <input type="text" class="form-control" placeholder="Brand Name" name="applicant_name"
+                id="applicant_name">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Batch/Lot Number" name="national_id" id="national_id">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Date of Manucture" name="gender" id="gender">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Name of Manufacturer" name="other_dep" id="other_dep">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Name of Distributors/ Supplies" name="mobile_no" id="mobile_no">
+            </div>
+
+            <!-- <div class="form-group">
+              <h5>Residential Address</h5>
+              <label>
+                <input type="checkbox" class="radio" value="r.owner" name="fooby[1][]" />Owner</label>
+              <label>
+                <input type="checkbox" class="radio" value="r.tenant" name="fooby[1][]" />Tenant</label>
+
+            </div> -->
+            <!-- <div class="form-group">
+              <h5>Business Location</h5>
+              <label>
+                <input type="checkbox" class="radio" value="b.owner" name="fooby[2][]" />Owner</label>
+              <label>
+                <input type="checkbox" class="radio" value="b.tenant" name="fooby[2][]" />Tenant</label>
+            </div> -->
+          
+          </form>
+
+        </div>
+        <!-- Second column  -->
+        <div class="col-md-6">
+          <div class="alert">You have submited a new entry!!</div>
+          <form action="#">
+            <div class="form-group">
+              <br>
+              <input type="text" class="form-control" placeholder="Generic Name">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Date of Expiry">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Date of receipt">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="County of Origin">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Distributors/Supplies Address">
+            </div>
+
+          </form>
+
+        </div>
+
+      </div>
+
+            <!-- Third row -->
+      <div class="row block-9">
+        <div class="col-md-6 pr-md-5">
+          <form id="contactForm">
+           
+            <div class="form-group">
+              <h5>Product Formulation</h5>
+              <h6>(select appropriate option)</h6>
+              <label>
+                <input type="checkbox" class="radio" value="r.owner" name="fooby[1][]" /> Oral tablet/Capsules</label>
+              </div>
+              <div class="form-group">
+                <label>
+                  <input type="checkbox" class="radio" value="r.owner" name="fooby[1][]" /> Oral Suspension/Syrup</label>
+                </div>
+                <div class="form-group">
+                  <label>
+                    <input type="checkbox" class="radio" value="r.owner" name="fooby[1][]" /> Injection</label>
+                  </div>
+                  <div class="form-group">
+                    <label>
+                      <input type="checkbox" class="radio" value="r.owner" name="fooby[1][]" /> Dilvent</label>
+                    </div>
+  
+                    <div class="form-group">
+                      <label>
+                        <input type="checkbox" class="radio" value="r.owner" name="fooby[1][]" /> Powder for Reconstitution of suspensions</label>
+                      </div>
+                      <div class="form-group">
+                        <label>
+                          <input type="checkbox" class="radio" value="r.owner" name="fooby[1][]" /> Powder For Reconstitution of Injection</label>
+                        </div>
+                        <div class="form-group">
+                          <label>
+                            <input type="checkbox" class="radio" value="r.owner" name="fooby[1][]" /> Eye drop</label>
+                          </div>
+                          <div class="form-group">
+                            <label>
+                              <input type="checkbox" class="radio" value="r.owner" name="fooby[1][]" /> Eye drop</label>
+                            </div>
+
+                            <div class="form-group">
+                              <label>
+                                <input type="checkbox" class="radio" value="r.owner" name="fooby[1][]" /> Nebulise Solution</label>
+                              </div>
+           
+          </form>
+
+        </div>
+        <!-- Second column  -->
+        <div class="col-md-6">
+          <div class="alert">You have submited a new entry!!</div>
+          <form action="#">
+            <div class="form-group">
+              <h5>COMPLAINT</h5>
+              <h6>(Tick appropriate box)</h6>
+              <label>
+                <input type="checkbox" class="radio" value="r.owner" name="fooby[1][]" /> Colour Change</label>
+              </div>
+              <div class="form-group">
+                <label>
+                  <input type="checkbox" class="radio" value="r.owner" name="fooby[1][]" /> Separating Powderimg/crumbling</label>
+                </div>
+                <div class="form-group">
+                  <label>
+                    <input type="checkbox" class="radio" value="r.owner" name="fooby[1][]" /> Caking </label>
+                  </div>
+                  <div class="form-group">
+                    <label>
+                      <input type="checkbox" class="radio" value="r.owner" name="fooby[1][]" /> Moulding</label>
+                    </div>
+                    <div class="form-group">
+                      <label>
+                        <input type="checkbox" class="radio" value="r.owner" name="fooby[1][]" /> Change of Colour</label>
+                      </div>
+                      <div class="form-group">
+                        <label>
+                          <input type="checkbox" class="radio" value="r.owner" name="fooby[1][]" /> Change of Odour</label>
+                        </div>
+                        <div class="form-group">
+                          <label>
+                            <input type="checkbox" class="radio" value="r.owner" name="fooby[1][]" /> Mislabeling</label>
+                          </div>
+                          <div class="form-group">
+                            <label>
+                              <input type="checkbox" class="radio" value="r.owner" name="fooby[1][]" /> Incomplete park</label>
+                            </div>
+                            <textarea name="" placeholder="Describe the complaint in details" id="" cols="15" rows="5"></textarea>
+
+                            
+          
+
+          </form>
+
+        </div>
+
+      </div>
 
 
-     
-        <!-- end of row 2 -->
+       <!-- second row -->
+       <div class="row block-9">
+        <div class="col-md-6 pr-md-5">
+          <form id="contactForm">
+            <div class="form-group">
+              <h5>Please Answer the following</h5>
+              <p>Does the product require refrigeration?</p>
+            </div>
+            <div class="form-group">
+              <p>Was the product available at the facility?</p>
+            </div>
+            <div class="form-group">
+              <p>Was the product dispensed and returned by client?</p>
+            </div>
+            <div class="form-group">
+             <p>Was the product stored according to manufacturer/MOH recommendation?</p> 
+            </div>
+          
 
-        <!-- Row 3 -->
-        
-        <!-- end of row 3 -->
+            <!-- <div class="form-group">
+              <h5>Residential Address</h5>
+              <label>
+                <input type="checkbox" class="radio" value="r.owner" name="fooby[1][]" />Owner</label>
+              <label>
+                <input type="checkbox" class="radio" value="r.tenant" name="fooby[1][]" />Tenant</label>
 
+            </div> -->
+            <!-- <div class="form-group">
+              <h5>Business Location</h5>
+              <label>
+                <input type="checkbox" class="radio" value="b.owner" name="fooby[2][]" />Owner</label>
+              <label>
+                <input type="checkbox" class="radio" value="b.tenant" name="fooby[2][]" />Tenant</label>
+            </div> -->
+           
+          </form>
 
+        </div>
+        <!-- Second column  -->
+        <div class="col-md-6">
+          <div class="alert">You have submited a new entry!!</div>
+          <form action="#">
+            <br>
+            <div class="form-group">
+               
+              <label>
+                <input type="checkbox" class="radio" value="r.owner" name="fooby[1][]" /> Yes</label>
+              <label>
+                <input type="checkbox" class="radio" value="r.tenant" name="fooby[1][]" /> No</label>
+
+            </div>
+            <div class="form-group">
+             
+               <label>
+                 <input type="checkbox" class="radio" value="r.owner" name="fooby[1][]" /> Yes</label>
+               <label>
+                 <input type="checkbox" class="radio" value="r.tenant" name="fooby[1][]" /> No</label>
+ 
+             </div>
        
+             <div class="form-group">
+             
+              <label>
+                <input type="checkbox" class="radio" value="r.owner" name="fooby[1][]" /> Yes</label>
+              <label>
+                <input type="checkbox" class="radio" value="r.tenant" name="fooby[1][]" /> No</label>
 
-      </form>
-      <!-- end of row 4 -->
+            </div>
+            
+
+           
+            <div class="form-group">
+             
+              <label>
+                <input type="checkbox" class="radio" value="r.owner" name="fooby[1][]" /> Yes</label>
+              <label>
+                <input type="checkbox" class="radio" value="r.tenant" name="fooby[1][]" /> No</label>
+
+            </div>
+           
+        
+           
+            
+         
+
+          </form>
+
+        </div>
+
+      </div>
+
+      <!-- Last row -->
+      <div class="row block-9">
+        <div class="col-md-6 pr-md-5">
+          <form id="contactForm">
+            <div class="form-group">
+              <h5>REPORTER IDENTITY</h5>
+              <input type="text" class="form-control" placeholder="Name of Reporter" name="applicant_name"
+                id="applicant_name">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Cadre/Job Title" name="national_id" id="national_id">
+            </div>
+           
+
+           
+            <div class="form-group">
+              <input type="submit" value="Submit" class="btn btn-primary py-3 px-5">
+            </div>
+          </form>
+
+        </div>
+        <!-- Second column  -->
+        <div class="col-md-6">
+          <div class="alert">You have submited a new entry!!</div>
+          <form action="#">
+          <br>
+            <div class="form-group">
+              
+              <input type="text" class="form-control" placeholder="Contact Number">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Reporters Email">
+            </div>
+            
+            
+          </form>
+
+        </div>
+
+      </div>
+
+
     </div>
     </div>
   </section>
 
-  <!-- Second Row -->
+  
 
 
 
@@ -149,20 +448,56 @@
 
   <footer class="ftco-footer ftco-bg-dark ftco-section">
     <div class="container">
-
+      <div class="row mb-5">
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2">Medico.</h2>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
+              blind texts.</p>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2">Quick Links</h2>
+            <ul class="list-unstyled">
+              <li><a href="index.html" class="py-2 d-block">Home</a></li>
+              
+            </ul>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2">Contact Information</h2>
+            <ul class="list-unstyled">
+              <li><a href="#" class="py-2 d-block">198 West 21th Street, Suite 721 New York NY 10016</a></li>
+              <li><a href="#" class="py-2 d-block">+ 1235 2355 98</a></li>
+              <li><a href="#" class="py-2 d-block">info@yoursite.com</a></li>
+              <li><a href="#" class="py-2 d-block">email@email.com</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4">
+            <ul class="ftco-footer-social list-unstyled float-md-left float-lft">
+              <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+              <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+              <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
       <div class="row">
-        <diSv class="col-md-12 text-center">
+        <div class="col-md-12 text-center">
 
           <p>
-
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             Copyright &copy;
-            <script>document.write(new Date().getFullYear());</script> All rights reserved|| Created with
-            <i class="icon-heart" aria-hidden="true"></i> by <a href="https://samuel46.github.io/my-work"
-              target="_blank">Sarijenn Media</a>
-
+            <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with
+            <i class="icon-heart" aria-hidden="true"></i> by <a href="https://samuel46.github/my-work" target="_blank">Sarijen Media</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
           </p>
+        </div>
       </div>
-    </div>
     </div>
   </footer>
 
@@ -194,8 +529,7 @@
   <script src="js/particles.min.js"></script>
   <script src="js/particle.js"></script>
   <script src="js/scrollax.min.js"></script>
-  <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+
   <script src="js/google-map.js"></script>
 
   <script src="js/main.js"></script>
