@@ -89,6 +89,11 @@ body {
   color: #fff;
 }
 
+.medico {
+  color: #fff;
+  font-weight: 400;
+}
+
 /* Alert */
 .alert {
   text-align: center;
